@@ -1,0 +1,16 @@
+{
+  "nodes":[
+    {"name":"A_PIE"},
+    {"name": "BICICLETA"},
+    {"name": "CONDUCTOR_BUS"},
+    {"name":"CONDUCTOR_MOTOCICLETA"},
+    {"name": "CONDUCTOR_TAXI"},
+    {"name": "CONDUCTOR_VEHICULO"},
+    {"name": "NO_REPORTADO"},
+    {"name": "PASAJERO_BARCO"},
+    {"name": "PASAJERO_BUS"},
+    {"name": "PASAJERO_MOTOCICLETA"},
+    {"name": "PASAJERO_TAXI"},
+    {"name": "PASAJERO_VEHICULO"}
+  ]
+}
