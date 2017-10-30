@@ -5,7 +5,7 @@ var margin = {top: 100, right: 100, bottom: 100, left: 100},
 var x = d3.scale.ordinal().rangeBands([0, width/2]),
     z = d3.scale.linear().domain([1,100])
       .interpolate(d3.interpolateRgb)
-      .range([d3.rgb("#FFF4FA"), d3.rgb('#FF0089')]);
+      .range([d3.rgb("#fee5d9"), d3.rgb('#99000d')]);
     // z = d3.scale.linear().domain([0, 4]).clamp(true);
     // c = d3.scale.category20().domain(d3.range(20));
 
