@@ -1,6 +1,6 @@
 var margin = {top: 100, right: 100, bottom: 100, left: 100},
-    width = 980,
-    height = 600;
+    width = 800,
+    height = 800;
 
 var x = d3.scale.ordinal().rangeBands([0, width/2]),
     z = d3.scale.linear().domain([1,100])
@@ -20,7 +20,7 @@ var svg = d3.select("body").append("svg")
 
 d3.csv("./data/delitos_sexuales.csv", function(links) {
   d3.json("./data/delitos.json", function(delitos) {
-    var matrix = {},
+    var matrix = new Map(),
         nodes = delitos.nodes,
         n = nodes.length,
         cols = [];
@@ -42,14 +42,15 @@ d3.csv("./data/delitos_sexuales.csv", function(links) {
     // Convert links to matrix; count character occurrences.
     links.forEach(function(link) {
       matrix[link.source][link.target].z += 1;
-      // matrix[link.target][link.source].z += 1;
-      // matrix[link.source][link.source].z += 1;
-      // matrix[link.target][link.target].z += 1;
       cols[link.source].count += 1;
-      // nodes[link.target].count += 1;
     });
     console.log(matrix);
     console.log(matrix.entries);
+
+    var value;
+    var max_value = 0;
+
+
 
     // Precompute the orders.
     // var orders = {
