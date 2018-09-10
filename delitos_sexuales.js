@@ -1,6 +1,8 @@
-var margin = {top: 100, right: 100, bottom: 100, left: 100},
-    width = 980,
-    height = 600;
+var div = document.getElementsByClassName('graph');
+
+var margin = {top: 200, right: 250, bottom: 200, left: 250},
+    width = div[0].offsetWidth * 0.5;
+    height = div[0].offsetHeight * 0.5;
 
 var x = d3.scale.ordinal().rangeBands([0, width/2]),
     z = d3.scale.linear().domain([1,100])
@@ -9,7 +11,7 @@ var x = d3.scale.ordinal().rangeBands([0, width/2]),
     // z = d3.scale.linear().domain([0, 4]).clamp(true);
     // c = d3.scale.category20().domain(d3.range(20));
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select(".graph").append("svg")
     .attr("id", "graph1")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
