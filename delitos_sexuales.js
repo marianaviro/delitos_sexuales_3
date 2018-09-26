@@ -50,8 +50,6 @@ d3.csv("./data/delitos_sexuales.csv", function(links) {
       cols[link.source].count += 1;
       // nodes[link.target].count += 1;
     });
-    console.log(matrix);
-    console.log(matrix.entries);
 
     // Precompute the orders.
     // var orders = {

@@ -178,9 +178,13 @@ p {
   padding-top: 5%;
 }
 
-.social span {
+.social a {
   margin: 0 20px;
-  /* color: #446DF6; */
+}
+
+.social a:hover {
+  color: #B14AED;
+  cursor: pointer;
 }
 
 .social {
