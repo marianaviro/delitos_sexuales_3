@@ -27,8 +27,8 @@ var getWindowOptions = function() {
   ].join();
 };
 
-var text = encodeURIComponent('This project shows how useful an adequate process of data collection would be in tackling sexual crimes. Share this and put some pressure on our government to ensure quality in the data they recover! https://marianaviro.github.io/delitos_sexuales_3/ #DatosAbiertos #MinTIC vía @PetiteLucia');
-var shareUrl = 'https://twitter.com/intent/tweet?url=' + location.href + '&text=' + text;
+var text = encodeURIComponent('This project shows how useful an adequate process of data collection would be in tackling sexual crimes. Share this and put some pressure on the Colombian government to ensure quality in the data they recover! https://marianaviro.github.io/delitos_sexuales_3/ #DatosAbiertos #MinTIC vía @PetiteLucia');
+var shareUrl = 'https://twitter.com/intent/tweet?text=' + text;
 
 document.getElementById('tw').addEventListener("click", function(e) {
   e.preventDefault();
